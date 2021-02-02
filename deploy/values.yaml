@@ -2,11 +2,15 @@ global:
   imageRegistry: ""
   imageTag: ""
 
+service:
+  type: ClusterIP
+  port: 80
+
 postgresql:
   version: "11.1"
   storageType: Durable
   storageSize: 1Gi
 
-service:
-  type: ClusterIP
-  port: 80
+db:
+  hostname: deploy-postgresql
+  existingSecret: deploy-postgresql-auth
