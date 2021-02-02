@@ -1,0 +1,12 @@
+global:
+  imageRegistry: ""
+  imageTag: ""
+
+postgresql:
+  version: "11.1"
+  storageType: Durable
+  storageSize: 1Gi
+
+service:
+  type: ClusterIP
+  port: 80
