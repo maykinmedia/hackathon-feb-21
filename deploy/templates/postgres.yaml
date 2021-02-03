@@ -3,7 +3,7 @@ kind: Postgres
 metadata:
   name: {{ include "deploy.fullname" . }}-postgresql
 spec:
-  version: {{ required "PostgreSQL version is required" .Values.postgresql.version | quote }}
+  version: "postgis-10.2"
   storageType: {{ required "PostgreSQL storage type is required" .Values.postgresql.storageType }}
   storage:
     accessModes:
