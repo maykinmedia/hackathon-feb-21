@@ -28,6 +28,11 @@ spec:
                 CREATE DATABASE openpersonen;
                 CREATE USER openpersonen with encrypted password 'openpersonen';
                 GRANT ALL PRIVILEGES ON DATABASE openpersonen TO openpersonen;
+
+                CREATE DATABASE objects;
+                CREATE USER objects with encrypted password 'objects';
+                GRANT ALL PRIVILEGES ON DATABASE objects TO objects;
+
               EOF
           env:
             - name: POSTGRES_HOST
