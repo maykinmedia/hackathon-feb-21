@@ -24,6 +24,10 @@ spec:
                 CREATE DATABASE objecttypes;
                 CREATE USER objecttypes with encrypted password 'objecttypes';
                 GRANT ALL PRIVILEGES ON DATABASE objecttypes TO objecttypes;
+
+                CREATE DATABASE openpersonen;
+                CREATE USER openpersonen with encrypted password 'openpersonen';
+                GRANT ALL PRIVILEGES ON DATABASE openpersonen TO openpersonen;
               EOF
           env:
             - name: POSTGRES_HOST
